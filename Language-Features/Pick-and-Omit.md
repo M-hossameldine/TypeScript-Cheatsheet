@@ -1,10 +1,10 @@
-### Pick and Omit
+# Pick and Omit
 
 Pick and Omit are utility types available in TypeScript since version 2.1 and 3.5 respectively.
 
 #### Pick Example
 
-constructs a type made up of as subset of the properties of another type:
+Constructs a type made up of as subset of the properties of another type:
 
 ```
 interface Person {
@@ -22,7 +22,7 @@ const a : ContactDetails = { email: "hossam@mail.com", phone: "01244588489"};
 
 #### Omit Example
 
-works similarly but you declare the properties you don't want:
+Works similarly but you declare the properties you don't want:
 
 ```
 interface ExamEntry {
@@ -43,7 +43,9 @@ const entry : MarkingDetails = {
 }
 ```
 
-#### Use Cases
+### Use Cases
+
+---
 
 Both Pick and Omit are useful when you want to create a new type based on an existing type but with a subset of the properties.
 
@@ -107,3 +109,9 @@ Both Pick and Omit are useful when you want to create a new type based on an exi
     // ... you only received the fields that you need
   }
 ```
+
+### References
+
+---
+
+- [Typescript Tips 1: Pick & Omit - By Joe Rackham](https://joerackham.medium.com/typescript-tips-1-pick-omit-f18c7977fc4a)
